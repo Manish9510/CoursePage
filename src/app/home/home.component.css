@@ -262,3 +262,7 @@ body{
     flex-direction: column;
     margin-top: 1rem;
 }
+
+.right-courses span{
+    margin-top: 0.7rem;
+}
