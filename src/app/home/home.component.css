@@ -189,25 +189,25 @@ body{
     flex-direction: column;
 }
 
-.rating {
+/* .rating {
     display: flex;
     align-items: center;
-}
+} */
 
 .checked {
     color: orange;
 }
 
-.rating h4 {
+/* .rating h4 {
     margin: 0 2px;
     line-height: 1;
-}
+} */
 
-.rating span{
+/* .rating span{
     margin-left: 0.5rem;
     font-size: 14px;
     align-items: ce;
-}
+} */
 
 .video{
     height: 30rem;
@@ -265,4 +265,202 @@ body{
 
 .right-courses span{
     margin-top: 0.7rem;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+.star-rating {
+    display: inline-block;
+    font-size: 0;
+}
+.star-rating input {
+    display: none;
+}
+.star-rating label {
+    float: right;
+    padding: 2px;
+    font-size: 36px;
+    color: #ccc;
+    transition: all 0.2s;
+    line-height: 1;
+}
+.star-rating input:checked ~ label {
+    color: #ffdd00;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffd700;
+}
+.rating-stats {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.nav{
+    margin-top: 4rem;
+}
+
+.nav a{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size:larger;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-hr{
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+}
+
+@media (max-width: 1024px) {
+    .main {
+        margin: 0 1rem;
+    }
+
+    .left-hero {
+        width: 55%;
+    }
+
+    .right-hero {
+        width: 40%;
+        margin-left: 1rem;
+    }
+
+    .discount {
+        margin-left: 4em;
+    }
+
+    .nav a {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin: 0 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-hero,
+    .right-hero {
+        width: 100%;
+        margin: 0;
+    }
+
+    .searchbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .d-flex {
+        height: auto;
+    }
+
+    .price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .discount {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .profile-img-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .credits {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .course-right {
+        margin-left: 0;
+    }
+
+    .course-text {
+        margin-right: 0;
+    }
+
+    .nav a {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .nav-hr {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses > h2 {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+
+    .dropdown-button {
+        padding: 10px;
+        font-size: 14px;
+        min-width: 120px;
+    }
+
+    .left-hero h3,
+    .right-hero h5 {
+        font-size: large;
+    }
+
+    .price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .discount-price {
+        font-size: small;
+    }
+
+    .discount {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .offer-time {
+        margin-top: 5em;
+    }
+
+    .profile-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .rating-stats {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav a {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
