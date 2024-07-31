@@ -339,6 +339,10 @@ body{
         margin-left: 2rem;
         margin-right: 2rem;
     }
+
+    .courses{
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -407,6 +411,14 @@ body{
     .nav-hr {
         height: 2rem;
     }
+
+    .courses{
+        width: 100%;
+    }
+
+    .video{
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -463,4 +475,10 @@ body{
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
+
+    .right-hero{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
 }
