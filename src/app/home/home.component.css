@@ -318,32 +318,122 @@ body{
 }
 
 @media (max-width: 1024px) {
+    /* Main container adjustment */
     .main {
         margin: 0 1rem;
+        max-width: 1024px;
     }
 
-    .left-hero {
-        width: 55%;
+    /* Hero section adjustments */
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .left-hero, 
+    .right-hero {
+        flex: 1 1 100%;
+        width: 100%;
+        margin: 0;
     }
 
     .right-hero {
-        width: 40%;
-        margin-left: 1rem;
+        margin-top: 2rem; /* Add spacing between sections */
+    }
+
+    /* Price and discount section adjustments */
+    .price {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .discount {
-        margin-left: 4em;
+        margin-left: 0;
+        margin-top: 1rem;
     }
 
+    /* Profile image container adjustments */
+    .profile-img-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .credits {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Search bar adjustments */
+    .searchbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* Flex container adjustment */
+    .d-flex {
+        height: auto;
+    }
+
+    /* Course right section adjustment */
+    .course-right {
+        margin-left: 0;
+    }
+
+    .course-text {
+        margin-right: 0;
+    }
+
+    /* Video adjustment */
+    .video {
+        width: 50%;
+        height: 100%;
+    }
+
+    /* Navbar adjustments */
     .nav a {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
-    .courses{
+    .nav-hr {
+        height: 2rem;
+    }
+
+    /* Courses section adjustments */
+    .courses {
         width: 100%;
+        max-width: 1024px;
+    }
+
+    /* Background color for courses section */
+    .courses > h2 {
+        width: 100%;
+        background-color: #0290E3;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* Overflow handling to prevent horizontal scrolling */
+    body, 
+    html {
+        overflow-x: hidden;
+    }
+
+    /* Ensure all images and videos scale properly */
+    img, 
+    video {
+        width: 50%;
+        height: 70%;
     }
 }
+  
 
 @media (max-width: 768px) {
     .main {
