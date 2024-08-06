@@ -318,13 +318,17 @@ body{
 }
 
 @media (max-width: 1024px) {
-    /* Main container adjustment */
     .main {
         margin: 0 1rem;
         max-width: 1024px;
     }
 
-    /* Hero section adjustments */
+    .profile-img {
+        width: 35px; 
+        height: 35px;
+        margin-left: -15px; 
+    }
+
     .hero {
         display: flex;
         flex-wrap: wrap;
@@ -339,10 +343,9 @@ body{
     }
 
     .right-hero {
-        margin-top: 2rem; /* Add spacing between sections */
+        margin-top: 2rem; 
     }
 
-    /* Price and discount section adjustments */
     .price {
         flex-direction: column;
         align-items: flex-start;
@@ -353,7 +356,6 @@ body{
         margin-top: 1rem;
     }
 
-    /* Profile image container adjustments */
     .profile-img-container {
         flex-direction: column;
         align-items: flex-start;
@@ -375,12 +377,10 @@ body{
         margin-bottom: 1rem;
     }
 
-    /* Flex container adjustment */
     .d-flex {
         height: auto;
     }
 
-    /* Course right section adjustment */
     .course-right {
         margin-left: 0;
     }
@@ -389,13 +389,11 @@ body{
         margin-right: 0;
     }
 
-    /* Video adjustment */
     .video {
         width: 50%;
         height: 100%;
     }
 
-    /* Navbar adjustments */
     .nav a {
         margin-left: 1rem;
         margin-right: 1rem;
@@ -405,13 +403,11 @@ body{
         height: 2rem;
     }
 
-    /* Courses section adjustments */
     .courses {
         width: 100%;
         max-width: 1024px;
     }
 
-    /* Background color for courses section */
     .courses > h2 {
         width: 100%;
         background-color: #0290E3;
@@ -420,13 +416,11 @@ body{
         padding: 1rem 0;
     }
 
-    /* Overflow handling to prevent horizontal scrolling */
     body, 
     html {
         overflow-x: hidden;
     }
 
-    /* Ensure all images and videos scale properly */
     img, 
     video {
         width: 50%;
@@ -438,6 +432,16 @@ body{
 @media (max-width: 768px) {
     .main {
         margin: 0 1rem;
+    }
+
+    .profile-img-container {
+        justify-content: flex-start; 
+    }
+
+    .profile-img {
+        width: 30px; 
+        height: 30px;
+        margin-left: -12px; 
     }
 
     .hero {
@@ -515,6 +519,16 @@ body{
     .courses > h2 {
         font-size: 1.5rem;
         height: 4rem;
+    }
+
+    /* .profile-img-container {
+        justify-content: flex-start; 
+    /*}*/ 
+
+    .profile-img {
+        width: 25px; 
+        height: 25px;
+        margin-left: -10px; 
     }
 
     .dropdown-button {
