@@ -641,3 +641,98 @@ body{
     }
 
 }
+
+.learn{
+    background: #f3fcf4;
+    padding: 1rem;
+    margin-top: 3rem;
+    height: auto;
+}
+
+.learn > h5{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.main-learn{
+    display: flex;
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+
+.left-learn, .right-learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-learn >span, .right-learn>span{
+    margin-bottom: 1em;
+    font-size: 1.25em;
+}
+
+.main-course{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.main-course>span{
+    margin-bottom: 1em;
+    font-size: larger;
+}
+
+.course-for{
+    margin-top: 2rem;
+}
+
+.course-for>h5{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.course-req{
+    margin-top: 2rem;
+}
+
+.course-req>h5{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.li-main{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.main-req>li{
+    margin-bottom: 1em;
+    font-size: larger;
+}
+
+.curriculum, .instructor{
+    margin-top: 3rem;
+}
+
+.instructor-main{
+    margin-top: 2rem;
+    border: 1pt solid grey;
+    padding: 3rem;
+    display: flex;
+}
+
+.instructor-profile>img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.instructor-info{
+    margin-left: 5rem;
+}
+
+.instructor-info>.star{
+    color: orange;
+}
+
+.span-star{
+    color: black;
+}
