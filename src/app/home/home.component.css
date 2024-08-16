@@ -709,7 +709,7 @@ body{
     font-size: larger;
 }
 
-.curriculum, .instructor{
+.curriculum, .instructor,.review{
     margin-top: 3rem;
 }
 
@@ -727,12 +727,35 @@ body{
 
 .instructor-info{
     margin-left: 5rem;
+    width: 70%;
 }
 
-.instructor-info>.star{
-    color: orange;
+.instructor-info-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
 }
 
-.span-star{
-    color: black;
+.instructor-about{
+    margin-top: 1rem;
+}
+
+.review{
+    height: 100%;
+}
+
+.rating-info{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.rating-number>h3{
+    font-size: 5rem;
+}
+
+.rating-course-rating{
+    font-weight: bold;
 }
