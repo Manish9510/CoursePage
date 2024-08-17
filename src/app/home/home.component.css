@@ -740,22 +740,33 @@ body{
     margin-top: 1rem;
 }
 
-.review{
-    height: 100%;
+.stars {
+    color: #ffc107;
 }
 
-.rating-info{
-    width: 20%;
-    height: 100%;
-    text-align: center;
+.rating-bar {
+    display: flex;
     align-items: center;
-    border: 1px solid gray;
 }
 
-.rating-number>h3{
-    font-size: 5rem;
+.rating-text {
+    width: 120px;
 }
 
-.rating-course-rating{
-    font-weight: bold;
+.progress {
+    height: 8px;
+}
+
+.progress-bar {
+    background-color: #ffc107;
+}
+
+.rating-percent {
+    width: 40px;
+    text-align: right;
+}
+
+.feedback-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
 }
